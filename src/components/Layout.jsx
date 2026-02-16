@@ -142,7 +142,7 @@ const Layout = ({ children }) => {
                             &copy; {new Date().getFullYear()} Sakina Space
                         </p>
                         <div className="flex items-center gap-2 text-[11px] text-[var(--color-sakina-stone-light)]">
-                            Built by <a href="https://sachinshrestha.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-sakina-brand)] transition-colors underline underline-offset-2">sachinshrestha.com</a>
+                            Built by <a href="https://sachinshrestha.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-sakina-brand)] transition-colors underline underline-offset-2">Sachin Shrestha</a>
                             <a href="https://linkedin.com/in/sachin-stha" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-sakina-brand)] transition-colors" aria-label="LinkedIn">
                                 <Linkedin className="w-3.5 h-3.5" />
                             </a>
