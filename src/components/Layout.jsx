@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Instagram, Linkedin, Twitter, Facebook, Youtube } from 'lucide-react';
 import Logo from './Logo';
 
 const Layout = ({ children }) => {
@@ -113,13 +114,39 @@ const Layout = ({ children }) => {
                             <div className="flex flex-col gap-2">
                                 <h4 className="text-[11px] font-semibold uppercase tracking-widest text-[var(--color-sakina-stone-light)] mb-1">Contact</h4>
                                 <a href="mailto:hello@sakinaspace.com" className="text-sm text-[var(--color-sakina-stone-light)] hover:text-[var(--color-sakina-stone)] transition-colors">hello@sakinaspace.com</a>
+                                <div className="flex items-center gap-3 mt-2">
+                                    <a href="https://instagram.com/sakinaspace" target="_blank" rel="noopener noreferrer" className="text-[var(--color-sakina-stone-light)] hover:text-[var(--color-sakina-brand)] transition-colors" aria-label="Instagram">
+                                        <Instagram className="w-4 h-4" />
+                                    </a>
+                                    <a href="https://x.com/sakinaspace" target="_blank" rel="noopener noreferrer" className="text-[var(--color-sakina-stone-light)] hover:text-[var(--color-sakina-brand)] transition-colors" aria-label="Twitter">
+                                        <Twitter className="w-4 h-4" />
+                                    </a>
+                                    <a href="https://linkedin.com/company/sakinaspace" target="_blank" rel="noopener noreferrer" className="text-[var(--color-sakina-stone-light)] hover:text-[var(--color-sakina-brand)] transition-colors" aria-label="LinkedIn">
+                                        <Linkedin className="w-4 h-4" />
+                                    </a>
+                                    <a href="https://facebook.com/sakinaspace" target="_blank" rel="noopener noreferrer" className="text-[var(--color-sakina-stone-light)] hover:text-[var(--color-sakina-brand)] transition-colors" aria-label="Facebook">
+                                        <Facebook className="w-4 h-4" />
+                                    </a>
+                                    <a href="https://tiktok.com/@sakinaspace" target="_blank" rel="noopener noreferrer" className="text-[var(--color-sakina-stone-light)] hover:text-[var(--color-sakina-brand)] transition-colors" aria-label="TikTok">
+                                        <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" /></svg>
+                                    </a>
+                                    <a href="https://youtube.com/@sakinaspace" target="_blank" rel="noopener noreferrer" className="text-[var(--color-sakina-stone-light)] hover:text-[var(--color-sakina-brand)] transition-colors" aria-label="YouTube">
+                                        <Youtube className="w-4 h-4" />
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div className="border-t border-[var(--color-sakina-border)] pt-6">
+                    <div className="border-t border-[var(--color-sakina-border)] pt-6 flex flex-col sm:flex-row justify-between items-center gap-2">
                         <p className="text-[11px] text-[var(--color-sakina-stone-light)]">
                             &copy; {new Date().getFullYear()} Sakina Space
                         </p>
+                        <div className="flex items-center gap-2 text-[11px] text-[var(--color-sakina-stone-light)]">
+                            Built by <a href="https://sachinshrestha.com" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-sakina-brand)] transition-colors underline underline-offset-2">sachinshrestha.com</a>
+                            <a href="https://linkedin.com/in/sachin-stha" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-sakina-brand)] transition-colors" aria-label="LinkedIn">
+                                <Linkedin className="w-3.5 h-3.5" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </footer>
