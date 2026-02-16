@@ -174,10 +174,10 @@ const Home = () => {
                         </motion.div>
 
                         <div className="grid gap-6">
-                            <div className="grid grid-cols-2 gap-6">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <motion.div
                                     initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
-                                    className="glass-card p-8 rounded-3xl h-64 flex flex-col justify-between"
+                                    className="glass-card p-8 rounded-3xl min-h-[200px] sm:h-64 flex flex-col justify-between"
                                 >
                                     <Users className="w-10 h-10 text-[var(--color-sakina-sage)]" />
                                     <div>
@@ -188,7 +188,7 @@ const Home = () => {
 
                                 <motion.div
                                     initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}
-                                    className="glass-card p-8 rounded-3xl h-64 flex flex-col justify-between bg-[var(--color-sakina-brand-soft)]"
+                                    className="glass-card p-8 rounded-3xl min-h-[200px] sm:h-64 flex flex-col justify-between bg-[var(--color-sakina-brand-soft)]"
                                 >
                                     <span className="block text-4xl font-serif text-[var(--color-sakina-brand)]">100%</span>
                                     <span className="text-sm font-medium">Verified & Vetted<br />Therapists</span>
